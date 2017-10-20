@@ -12,7 +12,7 @@ import CoreData
 private let reuseIdentifier = "ItemCell"
 
 class MainVC: UICollectionViewController, NSFetchedResultsControllerDelegate {
-    let sayHello = "Hello"
+
     var container: NSPersistentContainer? = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer
     
     lazy var fetchedResultController: NSFetchedResultsController<Item>? = {
