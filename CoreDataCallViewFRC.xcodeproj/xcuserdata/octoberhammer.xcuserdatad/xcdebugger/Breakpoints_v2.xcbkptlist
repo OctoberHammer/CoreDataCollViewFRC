@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreDataCallViewFRC/MainVC.swift"
+            timestampString = "530194584.212677"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "MainVC"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreDataCallViewFRC/MainVC.swift"
+            timestampString = "530194584.212768"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "MainVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataCallViewFRC.MainVC.blockOperations.getter : Swift.Array&lt;__ObjC.BlockOperation&gt;"
+                  moduleName = "CoreDataCallViewFRC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/MainVC.swift"
+                  timestampString = "530187343.981997"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "109">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataCallViewFRC.MainVC.blockOperations.setter : Swift.Array&lt;__ObjC.BlockOperation&gt;"
+                  moduleName = "CoreDataCallViewFRC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/MainVC.swift"
+                  timestampString = "530187343.987743"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataCallViewFRC.MainVC.init(collectionViewLayout: __ObjC.UICollectionViewLayout) -&gt; CoreDataCallViewFRC.MainVC"
+                  moduleName = "CoreDataCallViewFRC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/MainVC.swift"
+                  timestampString = "530187343.991053"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "698">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataCallViewFRC.MainVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; CoreDataCallViewFRC.MainVC"
+                  moduleName = "CoreDataCallViewFRC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/MainVC.swift"
+                  timestampString = "530187343.994775"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "708">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataCallViewFRC.MainVC.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;CoreDataCallViewFRC.MainVC&gt;"
+                  moduleName = "CoreDataCallViewFRC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/MainVC.swift"
+                  timestampString = "530187343.997746"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "641">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreDataCallViewFRC/DataController.swift"
+            timestampString = "530194584.212839"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "generateRandomObjects(backgroundContext:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
