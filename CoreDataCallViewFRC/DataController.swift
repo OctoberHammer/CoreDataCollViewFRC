@@ -20,7 +20,7 @@ func generateRandomObjects(backgroundContext: NSManagedObjectContext) {
             let newItem = Item(context: backgroundContext)
             let newItemInternalPicture = InternalData(context: backgroundContext)
             newItem.title = "This is \(i)"
-            newItemInternalPicture.title = "This is \(i) with internal picture"
+            newItemInternalPicture.title = "This is \(i)"
             if i % 9 == 0, let image = UIImage(named: "\(9)"), let data:Data = UIImageJPEGRepresentation(image, 1.0) {
                 newItem.picture = data
                 newItemInternalPicture.picture = data

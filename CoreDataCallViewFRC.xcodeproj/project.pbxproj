@@ -22,9 +22,12 @@
 		C309D9FE1F9A178200E5758B /* InternalData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309D9FC1F9A178200E5758B /* InternalData+CoreDataClass.swift */; };
 		C309D9FF1F9A178200E5758B /* InternalData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309D9FD1F9A178200E5758B /* InternalData+CoreDataProperties.swift */; };
 		C309DA011F9A1D9400E5758B /* WithInternalStorageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309DA001F9A1D9400E5758B /* WithInternalStorageVC.swift */; };
+		D4AA8DB681822A63CCB9ADE6 /* Pods_CoreDataCallViewFRC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA668C67E30B5F2E8121F0BE /* Pods_CoreDataCallViewFRC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C7AE1709797110525BFFCC5 /* Pods-CoreDataCallViewFRC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataCallViewFRC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataCallViewFRC/Pods-CoreDataCallViewFRC.debug.xcconfig"; sourceTree = "<group>"; };
+		97A1A95BE2BF96C50A0A618E /* Pods-CoreDataCallViewFRC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataCallViewFRC.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataCallViewFRC/Pods-CoreDataCallViewFRC.release.xcconfig"; sourceTree = "<group>"; };
 		C3007EBD1F9917C8003A76BC /* CoreDataCallViewFRC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataCallViewFRC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3007EC01F9917C8003A76BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3007EC21F9917C8003A76BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +45,7 @@
 		C309D9FC1F9A178200E5758B /* InternalData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InternalData+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C309D9FD1F9A178200E5758B /* InternalData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InternalData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C309DA001F9A1D9400E5758B /* WithInternalStorageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithInternalStorageVC.swift; sourceTree = "<group>"; };
+		FA668C67E30B5F2E8121F0BE /* Pods_CoreDataCallViewFRC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataCallViewFRC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4AA8DB681822A63CCB9ADE6 /* Pods_CoreDataCallViewFRC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01426674FA308B166E05C4F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA668C67E30B5F2E8121F0BE /* Pods_CoreDataCallViewFRC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64E3385FC4C46B261DFCC4ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C7AE1709797110525BFFCC5 /* Pods-CoreDataCallViewFRC.debug.xcconfig */,
+				97A1A95BE2BF96C50A0A618E /* Pods-CoreDataCallViewFRC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C3007EB41F9917C8003A76BC = {
 			isa = PBXGroup;
 			children = (
 				C3007EBF1F9917C8003A76BC /* CoreDataCallViewFRC */,
 				C3007EBE1F9917C8003A76BC /* Products */,
+				64E3385FC4C46B261DFCC4ED /* Pods */,
+				01426674FA308B166E05C4F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3007ED21F9917C8003A76BC /* Build configuration list for PBXNativeTarget "CoreDataCallViewFRC" */;
 			buildPhases = (
+				AE2BFFA4B8AFA77EF1D5AD37 /* [CP] Check Pods Manifest.lock */,
 				C3007EB91F9917C8003A76BC /* Sources */,
 				C3007EBA1F9917C8003A76BC /* Frameworks */,
 				C3007EBB1F9917C8003A76BC /* Resources */,
+				86DBEFD0582E699195A7346D /* [CP] Embed Pods Frameworks */,
+				B5F2C303322B2133577E5EA1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,6 +188,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86DBEFD0582E699195A7346D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CoreDataCallViewFRC/Pods-CoreDataCallViewFRC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/PagedHorizontalView/PagedHorizontalView.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PagedHorizontalView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreDataCallViewFRC/Pods-CoreDataCallViewFRC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE2BFFA4B8AFA77EF1D5AD37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoreDataCallViewFRC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5F2C303322B2133577E5EA1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreDataCallViewFRC/Pods-CoreDataCallViewFRC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C3007EB91F9917C8003A76BC /* Sources */ = {
@@ -312,6 +403,7 @@
 		};
 		C3007ED31F9917C8003A76BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C7AE1709797110525BFFCC5 /* Pods-CoreDataCallViewFRC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -327,6 +419,7 @@
 		};
 		C3007ED41F9917C8003A76BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97A1A95BE2BF96C50A0A618E /* Pods-CoreDataCallViewFRC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
