@@ -11,7 +11,7 @@ import Foundation
 import CoreData
 
 
-extension InternalData {
+extension InternalData: ItemCellViewModel {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<InternalData> {
         return NSFetchRequest<InternalData>(entityName: "InternalData")
@@ -20,4 +20,10 @@ extension InternalData {
     @NSManaged public var picture: Data?
     @NSManaged public var title: String?
 
+    func getTitle()->String {
+        return self.title ?? ""
+    }
+    func getPicture()->Data? {
+        return self.picture
+    }
 }

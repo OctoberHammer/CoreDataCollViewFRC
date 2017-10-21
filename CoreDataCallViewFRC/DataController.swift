@@ -9,47 +9,65 @@
 import Foundation
 import CoreData
 import UIKit
+import RealmSwift
+
 var modelArray = ["First", "Second", "Third", "Eleventh","Hello there", "Fuck off", "Son of a busquit", "Game over"]
 
 func generateRandomObjects(backgroundContext: NSManagedObjectContext) {
     //С какой-то задержкой
+    
+    var realmArray: [RmItem] = []
+    
     DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
     backgroundContext.perform {
         
         for i in 1..<51 {
             let newItem = Item(context: backgroundContext)
             let newItemInternalPicture = InternalData(context: backgroundContext)
+            let rmItem = RmItem()
+            rmItem.title = "This is \(i)"
             newItem.title = "This is \(i)"
             newItemInternalPicture.title = "This is \(i)"
             if i % 9 == 0, let image = UIImage(named: "\(9)"), let data:Data = UIImageJPEGRepresentation(image, 1.0) {
                 newItem.picture = data
                 newItemInternalPicture.picture = data
+                rmItem.picture = data
             }else if i % 8 == 0, let image = UIImage(named: "\(8)"), let data:Data = UIImageJPEGRepresentation(image, 1.0) {
                 newItem.picture = data
                 newItemInternalPicture.picture = data
+                rmItem.picture = data
             } else if  i % 7 == 0, let image = UIImage(named: "\(7)"), let data:Data = UIImageJPEGRepresentation(image, 1.0) {
                 newItem.picture = data
                 newItemInternalPicture.picture = data
+                rmItem.picture = data
             } else if  i % 6 == 0, let image = UIImage(named: "\(6)"), let data:Data = UIImageJPEGRepresentation(image, 1.0) {
                 newItem.picture = data
                 newItemInternalPicture.picture = data
+                rmItem.picture = data
             } else if  i % 5 == 0, let image = UIImage(named: "\(5)"), let data:Data = UIImageJPEGRepresentation(image, 1.0) {
                 newItem.picture = data
                 newItemInternalPicture.picture = data
+                rmItem.picture = data
             } else  if i % 4 == 0, let image = UIImage(named: "\(4)"), let data:Data = UIImageJPEGRepresentation(image, 1.0) {
                 newItem.picture = data
                 newItemInternalPicture.picture = data
+                rmItem.picture = data
             } else if i % 3 == 0, let image = UIImage(named: "\(3)"), let data:Data = UIImageJPEGRepresentation(image, 1.0) {
                 newItem.picture = data
                 newItemInternalPicture.picture = data
+                rmItem.picture = data
             } else if i % 2 == 0, let image = UIImage(named: "\(2)"), let data:Data = UIImageJPEGRepresentation(image, 1.0) {
                 newItem.picture = data
                 newItemInternalPicture.picture = data
+                rmItem.picture = data
             } else if i % 1 == 0, let image = UIImage(named: "\(1)"), let data:Data = UIImageJPEGRepresentation(image, 1.0) {
                 newItem.picture = data
                 newItemInternalPicture.picture = data
+                rmItem.picture = data
             }
+            realmArray.append(rmItem)
         }
+        
 //        for (index,everyItem) in modelArray.enumerated() {
 //            let newItem = Item(context: context)
 //            newItem.title = everyItem
@@ -64,6 +82,14 @@ func generateRandomObjects(backgroundContext: NSManagedObjectContext) {
             let nserror = error as NSError
             fatalError("Unresolved error \(nserror.localizedDescription), \(nserror.userInfo)")
         }
+        // Get the default Realm
+        let realm = try! Realm()
+        // Persist your data easily
+        try! realm.write {
+            realm.add(realmArray)
+        }
+            
+
     }
     }
 }

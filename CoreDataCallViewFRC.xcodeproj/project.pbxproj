@@ -22,6 +22,8 @@
 		C309D9FE1F9A178200E5758B /* InternalData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309D9FC1F9A178200E5758B /* InternalData+CoreDataClass.swift */; };
 		C309D9FF1F9A178200E5758B /* InternalData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309D9FD1F9A178200E5758B /* InternalData+CoreDataProperties.swift */; };
 		C309DA011F9A1D9400E5758B /* WithInternalStorageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309DA001F9A1D9400E5758B /* WithInternalStorageVC.swift */; };
+		C3C4530C1F9B9746005D4E08 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C4530B1F9B9746005D4E08 /* RealmModel.swift */; };
+		C3C4530E1F9B9869005D4E08 /* RealmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C4530D1F9B9869005D4E08 /* RealmVC.swift */; };
 		D4AA8DB681822A63CCB9ADE6 /* Pods_CoreDataCallViewFRC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA668C67E30B5F2E8121F0BE /* Pods_CoreDataCallViewFRC.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		C309D9FC1F9A178200E5758B /* InternalData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InternalData+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C309D9FD1F9A178200E5758B /* InternalData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InternalData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C309DA001F9A1D9400E5758B /* WithInternalStorageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithInternalStorageVC.swift; sourceTree = "<group>"; };
+		C3C4530B1F9B9746005D4E08 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		C3C4530D1F9B9869005D4E08 /* RealmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmVC.swift; sourceTree = "<group>"; };
 		FA668C67E30B5F2E8121F0BE /* Pods_CoreDataCallViewFRC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataCallViewFRC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,11 +102,9 @@
 		C3007EBF1F9917C8003A76BC /* CoreDataCallViewFRC */ = {
 			isa = PBXGroup;
 			children = (
-				C309D9FC1F9A178200E5758B /* InternalData+CoreDataClass.swift */,
-				C309D9FD1F9A178200E5758B /* InternalData+CoreDataProperties.swift */,
-				C3007EDB1F99DD89003A76BC /* Item+CoreDataClass.swift */,
-				C3007EDC1F99DD89003A76BC /* Item+CoreDataProperties.swift */,
+				C3C4530A1F9B9723005D4E08 /* Model */,
 				C3007EC01F9917C8003A76BC /* AppDelegate.swift */,
+				C3C4530D1F9B9869005D4E08 /* RealmVC.swift */,
 				C3007ED71F99191D003A76BC /* ItemCell.swift */,
 				C3007ED81F99191D003A76BC /* ItemCell.xib */,
 				C3007EC21F9917C8003A76BC /* ViewController.swift */,
@@ -116,6 +118,18 @@
 				C309DA001F9A1D9400E5758B /* WithInternalStorageVC.swift */,
 			);
 			path = CoreDataCallViewFRC;
+			sourceTree = "<group>";
+		};
+		C3C4530A1F9B9723005D4E08 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C309D9FC1F9A178200E5758B /* InternalData+CoreDataClass.swift */,
+				C309D9FD1F9A178200E5758B /* InternalData+CoreDataProperties.swift */,
+				C3007EDB1F99DD89003A76BC /* Item+CoreDataClass.swift */,
+				C3007EDC1F99DD89003A76BC /* Item+CoreDataProperties.swift */,
+				C3C4530B1F9B9746005D4E08 /* RealmModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,20 +212,34 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CoreDataCallViewFRC/Pods-CoreDataCallViewFRC-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/KBRoundedButton/KBRoundedButton.framework",
+				"${BUILT_PRODUCTS_DIR}/LGButton/LGButton.framework",
+				"${BUILT_PRODUCTS_DIR}/PMSuperButton/PMSuperButton.framework",
 				"${BUILT_PRODUCTS_DIR}/PagedHorizontalView/PagedHorizontalView.framework",
+				"${BUILT_PRODUCTS_DIR}/QBFlatButton/QBFlatButton.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyButton/SwiftyButton.framework",
+				"${BUILT_PRODUCTS_DIR}/WYMaterialButton/WYMaterialButton.framework",
 				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KBRoundedButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PMSuperButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PagedHorizontalView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QBFlatButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WYMaterialButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -259,12 +287,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3007EDE1F99DD89003A76BC /* Item+CoreDataProperties.swift in Sources */,
+				C3C4530C1F9B9746005D4E08 /* RealmModel.swift in Sources */,
 				C3007EDD1F99DD89003A76BC /* Item+CoreDataClass.swift in Sources */,
 				C3007EC31F9917C8003A76BC /* ViewController.swift in Sources */,
 				C3007ED61F9918E2003A76BC /* MainVC.swift in Sources */,
 				C3007EC11F9917C8003A76BC /* AppDelegate.swift in Sources */,
 				C3007EE01F99E22B003A76BC /* DataController.swift in Sources */,
 				C309D9FE1F9A178200E5758B /* InternalData+CoreDataClass.swift in Sources */,
+				C3C4530E1F9B9869005D4E08 /* RealmVC.swift in Sources */,
 				C309DA011F9A1D9400E5758B /* WithInternalStorageVC.swift in Sources */,
 				C3007EC91F9917C8003A76BC /* CoreDataCallViewFRC.xcdatamodeld in Sources */,
 				C309D9FF1F9A178200E5758B /* InternalData+CoreDataProperties.swift in Sources */,

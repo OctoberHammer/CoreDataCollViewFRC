@@ -11,7 +11,7 @@ import Foundation
 import CoreData
 
 
-extension Item {
+extension Item: ItemCellViewModel {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Item> {
         return NSFetchRequest<Item>(entityName: "Item")
@@ -20,4 +20,12 @@ extension Item {
     @NSManaged public var title: String?
     @NSManaged public var picture: Data?
 
+    
+    func getTitle()->String {
+        return self.title ?? ""
+    }
+    func getPicture()->Data? {
+        return self.picture
+    }
+    
 }

@@ -1,9 +1,12 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "ItemCellViewModel"
 - "ItemCell"
 provides-nominal:
+- "19CoreDataCallViewFRC08ItemCellD5ModelP"
 - "19CoreDataCallViewFRC8ItemCellC"
 provides-member:
+- ["19CoreDataCallViewFRC08ItemCellD5ModelP", ""]
 - ["19CoreDataCallViewFRC8ItemCellC", ""]
 provides-dynamic-lookup:
 - "awakeFromNib"
@@ -11,9 +14,10 @@ provides-dynamic-lookup:
 - "titleLabel"
 depends-top-level:
 - "AssignmentPrecedence"
-- "InternalData"
-- "Item"
+- "Data"
 - "ItemCell"
+- "ItemCellViewModel"
+- "String"
 - "UICollectionViewCell"
 - !private "UIImage"
 - "UIImageView"
@@ -33,7 +37,6 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "picture"]
 - !private ["s7CVarArgP", "text"]
-- !private ["s7CVarArgP", "title"]
 - !private ["s7CVarArgP", "titleLabel"]
 - ["s7CVarArgP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "UIImage"]
@@ -42,7 +45,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "picture"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
-- !private ["s28CustomDebugStringConvertibleP", "title"]
 - !private ["s28CustomDebugStringConvertibleP", "titleLabel"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "UIImage"]
@@ -51,7 +53,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "picture"]
 - !private ["s23CustomStringConvertibleP", "text"]
-- !private ["s23CustomStringConvertibleP", "title"]
 - !private ["s23CustomStringConvertibleP", "titleLabel"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s9EquatableP", "UIImage"]
@@ -60,7 +61,6 @@ depends-member:
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "picture"]
 - !private ["s9EquatableP", "text"]
-- !private ["s9EquatableP", "title"]
 - !private ["s9EquatableP", "titleLabel"]
 - ["s9EquatableP", ""]
 - !private ["s8HashableP", "UIImage"]
@@ -69,15 +69,9 @@ depends-member:
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "picture"]
 - !private ["s8HashableP", "text"]
-- !private ["s8HashableP", "title"]
 - !private ["s8HashableP", "titleLabel"]
 - ["s8HashableP", ""]
-- !private ["19CoreDataCallViewFRC08InternalB0C", "picture"]
-- !private ["19CoreDataCallViewFRC08InternalB0C", "title"]
-- !private ["19CoreDataCallViewFRC4ItemC", "picture"]
-- !private ["19CoreDataCallViewFRC4ItemC", "title"]
-- ["19CoreDataCallViewFRC8ItemCellC", "InternalData"]
-- ["19CoreDataCallViewFRC8ItemCellC", "Item"]
+- ["19CoreDataCallViewFRC8ItemCellC", "ItemCellViewModel"]
 - !private ["19CoreDataCallViewFRC8ItemCellC", "UIImage"]
 - ["19CoreDataCallViewFRC8ItemCellC", "UIImageView"]
 - ["19CoreDataCallViewFRC8ItemCellC", "UILabel"]
@@ -87,6 +81,10 @@ depends-member:
 - ["19CoreDataCallViewFRC8ItemCellC", "init"]
 - ["19CoreDataCallViewFRC8ItemCellC", "picture"]
 - ["19CoreDataCallViewFRC8ItemCellC", "titleLabel"]
+- ["19CoreDataCallViewFRC08ItemCellD5ModelP", "Data"]
+- ["19CoreDataCallViewFRC08ItemCellD5ModelP", "String"]
+- ["19CoreDataCallViewFRC08ItemCellD5ModelP", "getPicture"]
+- ["19CoreDataCallViewFRC08ItemCellD5ModelP", "getTitle"]
 - !private ["So8NSCodingP", "UIImage"]
 - !private ["So8NSCodingP", "awakeFromNib"]
 - !private ["So8NSCodingP", "image"]
@@ -95,14 +93,9 @@ depends-member:
 - !private ["So8NSCodingP", "text"]
 - !private ["So8NSCodingP", "titleLabel"]
 - ["So8NSCodingP", ""]
-- !private ["So20NSFetchRequestResultP", "picture"]
-- !private ["So20NSFetchRequestResultP", "title"]
 - !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "init"]
-- !private ["So15NSManagedObjectC", "picture"]
-- !private ["So15NSManagedObjectC", "title"]
-- ["So8NSObjectC", "InternalData"]
-- ["So8NSObjectC", "Item"]
+- ["So8NSObjectC", "ItemCellViewModel"]
 - !private ["So8NSObjectC", "UIImage"]
 - ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UILabel"]
@@ -112,7 +105,6 @@ depends-member:
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "picture"]
 - !private ["So8NSObjectC", "text"]
-- !private ["So8NSObjectC", "title"]
 - ["So8NSObjectC", "titleLabel"]
 - !private ["So16NSObjectProtocolP", "UIImage"]
 - !private ["So16NSObjectProtocolP", "awakeFromNib"]
@@ -120,7 +112,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "picture"]
 - !private ["So16NSObjectProtocolP", "text"]
-- !private ["So16NSObjectProtocolP", "title"]
 - !private ["So16NSObjectProtocolP", "titleLabel"]
 - ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "init"]
@@ -149,8 +140,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "titleLabel"]
 - ["So21UIAppearanceContainerP", ""]
-- ["So24UICollectionReusableViewC", "InternalData"]
-- ["So24UICollectionReusableViewC", "Item"]
+- ["So24UICollectionReusableViewC", "ItemCellViewModel"]
 - !private ["So24UICollectionReusableViewC", "UIImage"]
 - ["So24UICollectionReusableViewC", "UIImageView"]
 - ["So24UICollectionReusableViewC", "UILabel"]
@@ -159,8 +149,7 @@ depends-member:
 - ["So24UICollectionReusableViewC", "init"]
 - ["So24UICollectionReusableViewC", "picture"]
 - ["So24UICollectionReusableViewC", "titleLabel"]
-- ["So20UICollectionViewCellC", "InternalData"]
-- ["So20UICollectionViewCellC", "Item"]
+- ["So20UICollectionViewCellC", "ItemCellViewModel"]
 - !private ["So20UICollectionViewCellC", "UIImage"]
 - ["So20UICollectionViewCellC", "UIImageView"]
 - ["So20UICollectionViewCellC", "UILabel"]
@@ -215,8 +204,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "titleLabel"]
 - ["So30UIPasteConfigurationSupportingP", ""]
-- ["So11UIResponderC", "InternalData"]
-- ["So11UIResponderC", "Item"]
+- ["So11UIResponderC", "ItemCellViewModel"]
 - !private ["So11UIResponderC", "UIImage"]
 - ["So11UIResponderC", "UIImageView"]
 - ["So11UIResponderC", "UILabel"]
@@ -243,8 +231,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "titleLabel"]
 - ["So18UITraitEnvironmentP", ""]
-- ["So6UIViewC", "InternalData"]
-- ["So6UIViewC", "Item"]
+- ["So6UIViewC", "ItemCellViewModel"]
 - !private ["So6UIViewC", "UIImage"]
 - ["So6UIViewC", "UIImageView"]
 - ["So6UIViewC", "UILabel"]
@@ -270,7 +257,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "picture"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "titleLabel"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 depends-nominal:
@@ -280,14 +266,11 @@ depends-nominal:
 - "s23CustomStringConvertibleP"
 - "s9EquatableP"
 - "s8HashableP"
-- !private "19CoreDataCallViewFRC08InternalB0C"
-- !private "19CoreDataCallViewFRC4ItemC"
 - "19CoreDataCallViewFRC8ItemCellC"
+- "19CoreDataCallViewFRC08ItemCellD5ModelP"
 - "So8NSCodingP"
-- !private "So20NSFetchRequestResultP"
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
-- !private "So15NSManagedObjectC"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
 - !private "So14NSSecureCodingP"
@@ -317,6 +300,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Modules/RealmSwift.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
@@ -330,5 +314,51 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-interface-hash: "0a7fc20a780f4afafcc356be452a300e"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSchema.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm+Sync.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealmConfiguration+Sync.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/NSError+RLMSync.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMThreadSafeReference.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMListBase.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectBase_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMSyncUtil_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMSyncConfiguration_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMCollection_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncUtil.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/Realm.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncSession.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncPermission.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMMigration.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncConfiguration.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMCollection.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncManager.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncUser.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncCredentials.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMResults.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMConstants.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObject.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Modules/module.modulemap"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Modules/module.modulemap"
+interface-hash: "1efd4edd40fb2791360ba2f122e07046"

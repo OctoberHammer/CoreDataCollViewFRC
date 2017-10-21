@@ -1,14 +1,16 @@
 version: "Apple Swift version 4.0 (swiftlang-900.0.65.2 clang-900.0.37)"
-options: "e168cd7520525d96ec069f9e96ac2077"
-build_time: [1508503426, 339413000]
+options: "f834904effb9744c8f4d4b0c29ac06d5"
+build_time: [1508609099, 711707000]
 inputs:
-  "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/Item+CoreDataProperties.swift": [1508503115, 0]
-  "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/Item+CoreDataClass.swift": [1508503115, 0]
+  "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/Model/Item+CoreDataProperties.swift": [1508605416, 0]
+  "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/Model/RealmModel.swift": [1508605416, 0]
+  "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/Model/Item+CoreDataClass.swift": [1508503115, 0]
   "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/ViewController.swift": [1508503115, 0]
   "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/MainVC.swift": [1508503145, 0]
   "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/AppDelegate.swift": [1508503115, 0]
-  "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/DataController.swift": [1508503426, 0]
-  "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/InternalData+CoreDataClass.swift": [1508503115, 0]
+  "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/DataController.swift": [1508606949, 0]
+  "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/Model/InternalData+CoreDataClass.swift": [1508503115, 0]
+  "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/RealmVC.swift": [1508609099, 0]
   "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/WithInternalStorageVC.swift": [1508503115, 0]
-  "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/InternalData+CoreDataProperties.swift": [1508503115, 0]
-  "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/ItemCell.swift": [1508503115, 0]
+  "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/Model/InternalData+CoreDataProperties.swift": [1508605416, 0]
+  "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/ItemCell.swift": [1508605416, 0]

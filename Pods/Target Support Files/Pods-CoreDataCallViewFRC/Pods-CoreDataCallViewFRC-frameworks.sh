@@ -103,19 +103,33 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/KBRoundedButton/KBRoundedButton.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/LGButton/LGButton.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PMSuperButton/PMSuperButton.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PagedHorizontalView/PagedHorizontalView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/QBFlatButton/QBFlatButton.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Realm/Realm.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftyButton/SwiftyButton.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WYMaterialButton/WYMaterialButton.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/pop/pop.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/KBRoundedButton/KBRoundedButton.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/LGButton/LGButton.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PMSuperButton/PMSuperButton.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PagedHorizontalView/PagedHorizontalView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/QBFlatButton/QBFlatButton.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Realm/Realm.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftyButton/SwiftyButton.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WYMaterialButton/WYMaterialButton.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/pop/pop.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

@@ -1,29 +1,50 @@
 PODS:
   - Alamofire (4.5.1)
+  - KBRoundedButton (1.0.4)
+  - LGButton (1.0.4)
   - PagedHorizontalView (2.0.0)
+  - PMSuperButton (2.0.4)
+  - pop (1.0.10)
+  - QBFlatButton (1.1)
   - Realm (3.0.0):
     - Realm/Headers (= 3.0.0)
   - Realm/Headers (3.0.0)
   - RealmSwift (3.0.0):
     - Realm (= 3.0.0)
   - SideMenu (3.1.1)
+  - SwiftyButton (0.7.0)
+  - WYMaterialButton (2.0.2):
+    - pop (~> 1.0)
   - XLPagerTabStrip (8.0.0)
 
 DEPENDENCIES:
   - Alamofire
+  - KBRoundedButton
+  - LGButton
   - PagedHorizontalView
+  - PMSuperButton
+  - QBFlatButton
   - RealmSwift
   - SideMenu
+  - SwiftyButton
+  - WYMaterialButton
   - XLPagerTabStrip
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  KBRoundedButton: 8fde755b8f1df3ddd3c3c280d9b27ce04ab55d00
+  LGButton: 40c36e2b7a274d9cb263420e568bc8890832954e
   PagedHorizontalView: f74ca27c2cb8e18f6d78abbfa098ad6fe9dd3498
+  PMSuperButton: 148f52039b68d13b9335a3e8af81f37aec55cfa8
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  QBFlatButton: 3cf272985cdbdd04d6bc8b7ae01e4dd62cb09c17
   Realm: dec0de73be8c57506e39db72694d513c189493b3
   RealmSwift: 44a7090b16d1b22a406c6bf129bdd602db1bbecc
   SideMenu: 1bf32e90afaa2dc0e0ab68e938a0ff85014c4217
+  SwiftyButton: f0982849c00ef5a0ed0852202d00201af0943000
+  WYMaterialButton: e7834149d5a8e073ea4424162c2e7c922b7a25c0
   XLPagerTabStrip: d1ab378af0923320ec0b5eab11d7b2f803d31261
 
-PODFILE CHECKSUM: c773b83db6acf743a4e2c7971e5c34c57120df77
+PODFILE CHECKSUM: bc8dc9cde8b908cfc15fa32552470202e8a1275f
 
 COCOAPODS: 1.3.1

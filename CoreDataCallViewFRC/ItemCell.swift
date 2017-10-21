@@ -8,6 +8,14 @@
 
 import UIKit
 
+
+protocol ItemCellViewModel {
+    func getTitle()->String
+    func getPicture()->Data?
+}
+
+
+
 class ItemCell: UICollectionViewCell {
 
     @IBOutlet weak var picture: UIImageView!
@@ -16,18 +24,10 @@ class ItemCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    func configure(with item: Item) {
-        if let title = item.title, let data = item.picture {
-            self.titleLabel.text = title
+    func configure(with item: ItemCellViewModel) {
+        self.titleLabel.text = item.getTitle()
+        if let data = item.getPicture() {
             self.picture.image = UIImage(data: data)
-
-        }
-    }
-    func configure(with item: InternalData) {
-        if let title = item.title, let data = item.picture {
-            self.titleLabel.text = title
-            self.picture.image = UIImage(data: data)
-            
         }
     }
 }

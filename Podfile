@@ -12,4 +12,10 @@ target 'CoreDataCallViewFRC' do
   pod 'PagedHorizontalView'
   pod 'Alamofire'
   pod 'RealmSwift'
+  pod 'LGButton'
+  pod 'SwiftyButton'
+  pod 'WYMaterialButton'
+  pod 'KBRoundedButton'
+  pod 'QBFlatButton'
+  pod 'PMSuperButton'
 end

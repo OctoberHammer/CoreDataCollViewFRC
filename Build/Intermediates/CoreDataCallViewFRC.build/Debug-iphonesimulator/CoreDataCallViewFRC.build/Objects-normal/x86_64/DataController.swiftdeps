@@ -19,6 +19,8 @@ depends-top-level:
 - !private "Item"
 - !private "NSError"
 - "NSManagedObjectContext"
+- !private "Realm"
+- !private "RmItem"
 - "StringLiteralType"
 - !private "UIImage"
 - !private "UIImageJPEGRepresentation"
@@ -26,8 +28,14 @@ depends-top-level:
 - "generateRandomObjects"
 - "modelArray"
 depends-member:
+- !private ["Sa", "append"]
+- !private ["10RealmSwift28AssistedObjectiveCBridgeableP", "init"]
+- !private ["10RealmSwift28AssistedObjectiveCBridgeableP", "picture"]
+- !private ["10RealmSwift28AssistedObjectiveCBridgeableP", "title"]
+- !private ["s23BidirectionalCollectionP", "append"]
 - ["s23BidirectionalCollectionP", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "asyncAfter"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "localizedDescription"]
@@ -37,9 +45,11 @@ depends-member:
 - !private ["s7CVarArgP", "save"]
 - !private ["s7CVarArgP", "title"]
 - !private ["s7CVarArgP", "userInfo"]
+- !private ["s10CollectionP", "append"]
 - ["s10CollectionP", "init"]
 - ["s10ComparableP", "init"]
 - !private ["s10ComparableP", "now"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "asyncAfter"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "localizedDescription"]
@@ -52,8 +62,10 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "append"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "asyncAfter"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "localizedDescription"]
@@ -64,6 +76,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "title"]
 - !private ["s23CustomStringConvertibleP", "userInfo"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "append"]
 - ["s9DecodableP", "init"]
 - !private ["So14DispatchObjectC", "asyncAfter"]
 - !private ["So14DispatchObjectC", "main"]
@@ -71,8 +84,10 @@ depends-member:
 - !private ["So13DispatchQueueC", "main"]
 - !private ["8Dispatch0A4TimeV", "now"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "append"]
 - ["s9EncodableP", "init"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "add"]
 - !private ["s9EquatableP", "asyncAfter"]
 - ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "localizedDescription"]
@@ -83,8 +98,10 @@ depends-member:
 - !private ["s9EquatableP", "save"]
 - !private ["s9EquatableP", "title"]
 - !private ["s9EquatableP", "userInfo"]
+- !private ["s9EquatableP", "write"]
 - !private ["s5ErrorP", "localizedDescription"]
 - !private ["s5ErrorP", "userInfo"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "init"]
@@ -105,9 +122,13 @@ depends-member:
 - !private ["19CoreDataCallViewFRC4ItemC", "init"]
 - !private ["19CoreDataCallViewFRC4ItemC", "picture"]
 - !private ["19CoreDataCallViewFRC4ItemC", "title"]
+- !private ["19CoreDataCallViewFRC08ItemCellD5ModelP", "init"]
+- !private ["19CoreDataCallViewFRC08ItemCellD5ModelP", "picture"]
+- !private ["19CoreDataCallViewFRC08ItemCellD5ModelP", "title"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
+- !private ["s17MutableCollectionP", "append"]
 - ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "localizedDescription"]
 - !private ["So8NSCodingP", "perform"]
@@ -155,17 +176,43 @@ depends-member:
 - ["So8NSStringC", "init"]
 - !private ["So9OS_objectC", "asyncAfter"]
 - !private ["So9OS_objectC", "main"]
+- !private ["10RealmSwift6ObjectC", "init"]
+- !private ["10RealmSwift6ObjectC", "picture"]
+- !private ["10RealmSwift6ObjectC", "title"]
+- !private ["So13RLMObjectBaseC", "init"]
+- !private ["So13RLMObjectBaseC", "picture"]
+- !private ["So13RLMObjectBaseC", "title"]
+- !private ["s22RandomAccessCollectionP", "append"]
+- !private ["s26RangeReplaceableCollectionP", "append"]
 - ["s26RangeReplaceableCollectionP", "init"]
+- !private ["10RealmSwift0A0C", "add"]
+- !private ["10RealmSwift0A0C", "init"]
+- !private ["10RealmSwift0A0C", "write"]
+- !private ["10RealmSwift0A15CollectionValueP", "_getBuiltinLogicValue"]
+- ["10RealmSwift0A15CollectionValueP", "init"]
+- !private ["10RealmSwift0A15CollectionValueP", "picture"]
+- !private ["10RealmSwift0A15CollectionValueP", "title"]
+- !private ["10RealmSwift0A12OptionalTypeP", "_getBuiltinLogicValue"]
+- !private ["19CoreDataCallViewFRC6RmItemC", "init"]
+- !private ["19CoreDataCallViewFRC6RmItemC", "picture"]
+- !private ["19CoreDataCallViewFRC6RmItemC", "title"]
+- !private ["s8SequenceP", "append"]
 - ["s8SequenceP", "init"]
 - !private ["s12StaticStringV", "init"]
 - ["SS", "init"]
 - ["s14StringProtocolP", "init"]
 - ["s16TextOutputStreamP", "init"]
 - ["s20TextOutputStreamableP", "init"]
+- !private ["10RealmSwift14ThreadConfinedP", "init"]
+- !private ["10RealmSwift14ThreadConfinedP", "picture"]
+- !private ["10RealmSwift14ThreadConfinedP", "title"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So7UIImageC", "init"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s23_BidirectionalIndexableP", "append"]
 - ["s23_BidirectionalIndexableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -174,7 +221,9 @@ depends-member:
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "append"]
 - ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "append"]
 - ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "asyncAfter"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
@@ -185,11 +234,17 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "save"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userInfo"]
+- !private ["s17_MutableIndexableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
 - ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s22_RandomAccessIndexableP", "append"]
+- !private ["s26_RangeReplaceableIndexableP", "append"]
 - ["s26_RangeReplaceableIndexableP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
+- !private "Sa"
+- !private "10RealmSwift28AssistedObjectiveCBridgeableP"
 - "s23BidirectionalCollectionP"
 - !private "Sb"
 - "s7CVarArgP"
@@ -206,6 +261,7 @@ depends-nominal:
 - "s9EncodableP"
 - "s9EquatableP"
 - !private "s5ErrorP"
+- !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - "s26ExpressibleByStringLiteralP"
@@ -213,8 +269,10 @@ depends-nominal:
 - "s8HashableP"
 - !private "19CoreDataCallViewFRC08InternalB0C"
 - !private "19CoreDataCallViewFRC4ItemC"
+- !private "19CoreDataCallViewFRC08ItemCellD5ModelP"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
+- !private "s17MutableCollectionP"
 - "So8NSCodingP"
 - "So9NSCopyingP"
 - !private "So7NSErrorC"
@@ -230,17 +288,27 @@ depends-nominal:
 - "So14NSSecureCodingP"
 - "So8NSStringC"
 - !private "So9OS_objectC"
+- !private "10RealmSwift6ObjectC"
+- !private "So13RLMObjectBaseC"
+- !private "s22RandomAccessCollectionP"
 - "s26RangeReplaceableCollectionP"
+- !private "10RealmSwift0A0C"
+- "10RealmSwift0A15CollectionValueP"
+- !private "10RealmSwift0A12OptionalTypeP"
+- !private "19CoreDataCallViewFRC6RmItemC"
 - "s8SequenceP"
 - !private "s12StaticStringV"
 - "SS"
 - "s14StringProtocolP"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
+- !private "10RealmSwift14ThreadConfinedP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So7UIImageC"
 - !private "So39UIItemProviderPresentationSizeProvidingP"
+- !private "s14_ArrayProtocolP"
 - "s23_BidirectionalIndexableP"
+- !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
@@ -252,12 +320,15 @@ depends-nominal:
 - "s10_IndexableP"
 - "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
+- !private "s22_RandomAccessIndexableP"
 - "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Modules/RealmSwift.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
@@ -271,5 +342,51 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-interface-hash: "77d14d6efcbeb4b5b54ebe90cfd5dcd1"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSchema.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm+Sync.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealmConfiguration+Sync.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/NSError+RLMSync.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMThreadSafeReference.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMListBase.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectBase_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMSyncUtil_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMSyncConfiguration_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMCollection_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncUtil.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/Realm.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncSession.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncPermission.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMMigration.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncConfiguration.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMCollection.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncManager.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncUser.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncCredentials.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMResults.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMConstants.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObject.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Modules/module.modulemap"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Modules/module.modulemap"
+interface-hash: "1a2784c0201351303aa8a0ee0532e7bb"
