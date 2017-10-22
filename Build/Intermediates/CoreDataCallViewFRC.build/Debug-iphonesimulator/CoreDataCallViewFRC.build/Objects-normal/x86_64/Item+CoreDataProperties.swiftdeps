@@ -5,6 +5,7 @@ provides-nominal:
 provides-member:
 - ["19CoreDataCallViewFRC4ItemC", ""]
 provides-dynamic-lookup:
+- "file"
 - "picture"
 - "title"
 depends-top-level:
@@ -62,6 +63,7 @@ depends-member:
 - ["19CoreDataCallViewFRC4ItemC", "String"]
 - ["19CoreDataCallViewFRC4ItemC", "deinit"]
 - ["19CoreDataCallViewFRC4ItemC", "fetchRequest"]
+- ["19CoreDataCallViewFRC4ItemC", "file"]
 - ["19CoreDataCallViewFRC4ItemC", "getPicture"]
 - ["19CoreDataCallViewFRC4ItemC", "getTitle"]
 - ["19CoreDataCallViewFRC4ItemC", "picture"]
@@ -89,6 +91,7 @@ depends-member:
 - ["So15NSManagedObjectC", "NSFetchRequest"]
 - ["So15NSManagedObjectC", "String"]
 - ["So15NSManagedObjectC", "fetchRequest"]
+- ["So15NSManagedObjectC", "file"]
 - ["So15NSManagedObjectC", "getPicture"]
 - ["So15NSManagedObjectC", "getTitle"]
 - ["So15NSManagedObjectC", "picture"]
@@ -99,6 +102,7 @@ depends-member:
 - ["So8NSObjectC", "NSFetchRequest"]
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "fetchRequest"]
+- ["So8NSObjectC", "file"]
 - ["So8NSObjectC", "getPicture"]
 - ["So8NSObjectC", "getTitle"]
 - ["So8NSObjectC", "picture"]
@@ -252,4 +256,4 @@ depends-external:
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMProperty.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Modules/module.modulemap"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Modules/module.modulemap"
-interface-hash: "6fc85b8a8afadf96a11c0db8374f896b"
+interface-hash: "1da68697e39efc5240e74cc9657c41a8"

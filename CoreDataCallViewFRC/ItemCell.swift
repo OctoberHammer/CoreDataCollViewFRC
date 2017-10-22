@@ -28,6 +28,8 @@ class ItemCell: UICollectionViewCell {
         self.titleLabel.text = item.getTitle()
         if let data = item.getPicture() {
             self.picture.image = UIImage(data: data)
+        } else {
+            self.picture.image = nil
         }
     }
 }

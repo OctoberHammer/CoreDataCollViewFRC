@@ -19,6 +19,7 @@ extension InternalData: ItemCellViewModel {
 
     @NSManaged public var picture: Data?
     @NSManaged public var title: String?
+    @NSManaged public var file: String?
 
     func getTitle()->String {
         return self.title ?? ""

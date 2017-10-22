@@ -215,6 +215,7 @@ SWIFT_CLASS_NAMED("InternalData")
 @interface InternalData (SWIFT_EXTENSION(CoreDataCallViewFRC))
 @property (nonatomic, copy) NSData * _Nullable picture;
 @property (nonatomic, copy) NSString * _Nullable title;
+@property (nonatomic, copy) NSString * _Nullable file;
 @end
 
 
@@ -227,6 +228,7 @@ SWIFT_CLASS_NAMED("Item")
 @interface Item (SWIFT_EXTENSION(CoreDataCallViewFRC))
 @property (nonatomic, copy) NSString * _Nullable title;
 @property (nonatomic, copy) NSData * _Nullable picture;
+@property (nonatomic, copy) NSString * _Nullable file;
 @end
 
 @class UIImageView;
@@ -284,6 +286,7 @@ SWIFT_CLASS("_TtC19CoreDataCallViewFRC6RmItem")
 @interface RmItem : RealmSwiftObject
 @property (nonatomic, copy) NSString * _Nonnull title;
 @property (nonatomic, copy) NSData * _Nullable picture;
+@property (nonatomic, copy) NSString * _Nonnull file;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithRealm:(RLMRealm * _Nonnull)realm schema:(RLMObjectSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithValue:(id _Nonnull)value schema:(RLMSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;

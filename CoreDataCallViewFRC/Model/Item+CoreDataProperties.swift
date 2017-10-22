@@ -19,11 +19,12 @@ extension Item: ItemCellViewModel {
 
     @NSManaged public var title: String?
     @NSManaged public var picture: Data?
-
+    @NSManaged public var file: String?
     
     func getTitle()->String {
         return self.title ?? ""
     }
+    
     func getPicture()->Data? {
         return self.picture
     }

@@ -13,7 +13,8 @@ import RealmSwift
 class RmItem: Object, ItemCellViewModel {
     @objc dynamic var title = ""
     @objc dynamic var picture: Data?
-    
+    @objc dynamic var file = ""
+
     func getTitle()->String {
         return self.title 
     }

@@ -28,43 +28,18 @@ func generateRandomObjects(backgroundContext: NSManagedObjectContext) {
             rmItem.title = "This is \(i)"
             newItem.title = "This is \(i)"
             newItemInternalPicture.title = "This is \(i)"
-            if i % 9 == 0, let image = UIImage(named: "\(9)"), let data:Data = UIImageJPEGRepresentation(image, 1.0) {
-                newItem.picture = data
-                newItemInternalPicture.picture = data
-                rmItem.picture = data
-            }else if i % 8 == 0, let image = UIImage(named: "\(8)"), let data:Data = UIImageJPEGRepresentation(image, 1.0) {
-                newItem.picture = data
-                newItemInternalPicture.picture = data
-                rmItem.picture = data
-            } else if  i % 7 == 0, let image = UIImage(named: "\(7)"), let data:Data = UIImageJPEGRepresentation(image, 1.0) {
-                newItem.picture = data
-                newItemInternalPicture.picture = data
-                rmItem.picture = data
-            } else if  i % 6 == 0, let image = UIImage(named: "\(6)"), let data:Data = UIImageJPEGRepresentation(image, 1.0) {
-                newItem.picture = data
-                newItemInternalPicture.picture = data
-                rmItem.picture = data
-            } else if  i % 5 == 0, let image = UIImage(named: "\(5)"), let data:Data = UIImageJPEGRepresentation(image, 1.0) {
-                newItem.picture = data
-                newItemInternalPicture.picture = data
-                rmItem.picture = data
-            } else  if i % 4 == 0, let image = UIImage(named: "\(4)"), let data:Data = UIImageJPEGRepresentation(image, 1.0) {
-                newItem.picture = data
-                newItemInternalPicture.picture = data
-                rmItem.picture = data
-            } else if i % 3 == 0, let image = UIImage(named: "\(3)"), let data:Data = UIImageJPEGRepresentation(image, 1.0) {
-                newItem.picture = data
-                newItemInternalPicture.picture = data
-                rmItem.picture = data
-            } else if i % 2 == 0, let image = UIImage(named: "\(2)"), let data:Data = UIImageJPEGRepresentation(image, 1.0) {
-                newItem.picture = data
-                newItemInternalPicture.picture = data
-                rmItem.picture = data
-            } else if i % 1 == 0, let image = UIImage(named: "\(1)"), let data:Data = UIImageJPEGRepresentation(image, 1.0) {
-                newItem.picture = data
-                newItemInternalPicture.picture = data
-                rmItem.picture = data
+            for index in (1...9).reversed() {
+                if i % index == 0, let image = UIImage(named: "\(index)"), let data:Data = UIImageJPEGRepresentation(image, 1.0) {
+                    newItem.picture = data
+                    newItem.file = "\(index)"
+                    newItemInternalPicture.picture = data
+                    newItemInternalPicture.file = "\(index)"
+                    rmItem.picture = data
+                    rmItem.file = "\(index)"
+                    break
+                }
             }
+ 
             realmArray.append(rmItem)
         }
         
