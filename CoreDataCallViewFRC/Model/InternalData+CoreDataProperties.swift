@@ -9,7 +9,7 @@
 
 import Foundation
 import CoreData
-
+import UIKit
 
 extension InternalData: ItemCellViewModel {
 
@@ -25,6 +25,9 @@ extension InternalData: ItemCellViewModel {
         return self.title ?? ""
     }
     func getPicture()->Data? {
+        if let image = UIImage(named: "\(index)"), let data:Data = UIImageJPEGRepresentation(image, 1.0) {
+            return data
+        }
         return self.picture
     }
 }
