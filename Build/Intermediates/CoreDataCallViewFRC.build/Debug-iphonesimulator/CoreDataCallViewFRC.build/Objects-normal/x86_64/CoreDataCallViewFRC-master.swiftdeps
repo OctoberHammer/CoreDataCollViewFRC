@@ -1,8 +1,8 @@
 version: "Apple Swift version 4.0 (swiftlang-900.0.65.2 clang-900.0.37)"
 options: "f834904effb9744c8f4d4b0c29ac06d5"
-build_time: [1508666162, 86481000]
+build_time: [1508667401, 504152000]
 inputs:
-  "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/Model/Item+CoreDataProperties.swift": [1508662594, 0]
+  "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/Model/Item+CoreDataProperties.swift": [1508667401, 0]
   "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/Model/RealmModel.swift": [1508660141, 0]
   "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/Model/Item+CoreDataClass.swift": [1508662594, 0]
   "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/ViewController.swift": [1508503115, 0]
@@ -13,4 +13,4 @@ inputs:
   "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/RealmVC.swift": [1508610202, 0]
   "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/WithInternalStorageVC.swift": [1508503115, 0]
   "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/Model/InternalData+CoreDataProperties.swift": [1508660141, 0]
-  "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/ItemCell.swift": [1508666161, 0]
+  "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/ItemCell.swift": [1508667401, 0]
