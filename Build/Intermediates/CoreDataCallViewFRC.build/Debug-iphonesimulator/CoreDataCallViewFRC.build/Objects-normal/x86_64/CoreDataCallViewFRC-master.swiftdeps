@@ -1,13 +1,13 @@
 version: "Apple Swift version 4.0 (swiftlang-900.0.65.2 clang-900.0.37)"
 options: "f834904effb9744c8f4d4b0c29ac06d5"
-build_time: [1508667676, 644621000]
+build_time: [1508744803, 690305000]
 inputs:
   "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/Model/Item+CoreDataProperties.swift": [1508667401, 0]
   "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/Model/RealmModel.swift": [1508660141, 0]
   "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/Model/Item+CoreDataClass.swift": [1508662594, 0]
-  "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/ViewController.swift": [1508503115, 0]
+  "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/ViewController.swift": [1508744791, 0]
   "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/MainVC.swift": [1508503145, 0]
-  "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/AppDelegate.swift": [1508503115, 0]
+  "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/AppDelegate.swift": [1508744791, 0]
   "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/DataController.swift": [1508666046, 0]
   "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/Model/InternalData+CoreDataClass.swift": [1508503115, 0]
   "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/RealmVC.swift": [1508610202, 0]
