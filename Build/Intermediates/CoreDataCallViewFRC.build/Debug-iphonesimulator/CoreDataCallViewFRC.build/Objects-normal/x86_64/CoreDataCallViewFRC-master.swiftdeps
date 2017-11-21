@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
 options: "6581ef302437ffebc671b64e01bd8d96"
-build_time: [1509973210, 453913000]
+build_time: [1511250637, 549728000]
 inputs:
   "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/Model/Item+CoreDataProperties.swift": [1508667401, 0]
   "/Users/octoberhammer/Developer/CoreDataCallViewFRC/CoreDataCallViewFRC/Model/RealmModel.swift": [1508660141, 0]
