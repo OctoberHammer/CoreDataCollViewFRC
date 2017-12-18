@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (4.5.1)
+  - Crashlytics (3.9.3):
+    - Fabric (~> 1.7.2)
+  - Fabric (1.7.2)
   - KBRoundedButton (1.0.4)
   - LGButton (1.0.4)
   - PagedHorizontalView (2.0.0)
@@ -19,6 +22,8 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - Crashlytics
+  - Fabric
   - KBRoundedButton
   - LGButton
   - PagedHorizontalView
@@ -32,6 +37,8 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
+  Fabric: 9cd6a848efcf1b8b07497e0b6a2e7d336353ba15
   KBRoundedButton: 8fde755b8f1df3ddd3c3c280d9b27ce04ab55d00
   LGButton: 40c36e2b7a274d9cb263420e568bc8890832954e
   PagedHorizontalView: f74ca27c2cb8e18f6d78abbfa098ad6fe9dd3498
@@ -45,6 +52,6 @@ SPEC CHECKSUMS:
   WYMaterialButton: e7834149d5a8e073ea4424162c2e7c922b7a25c0
   XLPagerTabStrip: d1ab378af0923320ec0b5eab11d7b2f803d31261
 
-PODFILE CHECKSUM: bc8dc9cde8b908cfc15fa32552470202e8a1275f
+PODFILE CHECKSUM: 80e6161d71f147ef0fe86f63194aabd0a3427c37
 
 COCOAPODS: 1.3.1

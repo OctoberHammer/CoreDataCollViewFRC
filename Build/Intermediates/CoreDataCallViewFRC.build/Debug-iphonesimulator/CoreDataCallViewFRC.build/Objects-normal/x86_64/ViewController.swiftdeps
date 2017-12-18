@@ -1,97 +1,147 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "ViewController"
+- "RootViewController"
 provides-nominal:
-- "19CoreDataCallViewFRC0D10ControllerC"
+- "19CoreDataCallViewFRC04RootD10ControllerC"
 provides-member:
-- ["19CoreDataCallViewFRC0D10ControllerC", ""]
+- ["19CoreDataCallViewFRC04RootD10ControllerC", ""]
 provides-dynamic-lookup:
+- "crashTest"
 - "didReceiveMemoryWarning"
 - "viewDidLoad"
 depends-top-level:
+- !private "Crashlytics"
+- "RootViewController"
+- "UIButton"
 - "UIViewController"
-- "ViewController"
 depends-member:
+- !private ["s7CVarArgP", "Crashlytics"]
+- !private ["s7CVarArgP", "crash"]
 - !private ["s7CVarArgP", "didReceiveMemoryWarning"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "sharedInstance"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", ""]
+- !private ["So11CrashlyticsC", "crash"]
+- !private ["So11CrashlyticsC", "sharedInstance"]
+- !private ["s28CustomDebugStringConvertibleP", "Crashlytics"]
+- !private ["s28CustomDebugStringConvertibleP", "crash"]
 - !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "sharedInstance"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "Crashlytics"]
+- !private ["s23CustomStringConvertibleP", "crash"]
 - !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "sharedInstance"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s9EquatableP", "Crashlytics"]
+- !private ["s9EquatableP", "crash"]
 - !private ["s9EquatableP", "didReceiveMemoryWarning"]
 - !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "sharedInstance"]
 - !private ["s9EquatableP", "viewDidLoad"]
 - ["s9EquatableP", ""]
+- !private ["s8HashableP", "Crashlytics"]
+- !private ["s8HashableP", "crash"]
 - !private ["s8HashableP", "didReceiveMemoryWarning"]
 - !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "sharedInstance"]
 - !private ["s8HashableP", "viewDidLoad"]
 - ["s8HashableP", ""]
+- !private ["So8NSCodingP", "Crashlytics"]
 - !private ["So8NSCodingP", "didReceiveMemoryWarning"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So8NSCodingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "Crashlytics"]
 - !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So8NSObjectC", "Crashlytics"]
+- ["So8NSObjectC", "UIButton"]
+- !private ["So8NSObjectC", "crash"]
+- ["So8NSObjectC", "crashTest"]
 - ["So8NSObjectC", "didReceiveMemoryWarning"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "sharedInstance"]
 - ["So8NSObjectC", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "Crashlytics"]
+- !private ["So16NSObjectProtocolP", "crash"]
 - !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
 - !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "sharedInstance"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
 - ["So16NSObjectProtocolP", ""]
+- !private ["19CoreDataCallViewFRC04RootD10ControllerC", "Crashlytics"]
+- ["19CoreDataCallViewFRC04RootD10ControllerC", "UIButton"]
+- ["19CoreDataCallViewFRC04RootD10ControllerC", "crashTest"]
+- ["19CoreDataCallViewFRC04RootD10ControllerC", "deinit"]
+- ["19CoreDataCallViewFRC04RootD10ControllerC", "didReceiveMemoryWarning"]
+- ["19CoreDataCallViewFRC04RootD10ControllerC", "init"]
+- ["19CoreDataCallViewFRC04RootD10ControllerC", "viewDidLoad"]
+- !private ["So21UIAppearanceContainerP", "Crashlytics"]
 - !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", ""]
+- !private ["So18UIContentContainerP", "Crashlytics"]
 - !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - ["So18UIContentContainerP", ""]
+- !private ["So18UIFocusEnvironmentP", "Crashlytics"]
 - !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - ["So18UIFocusEnvironmentP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "Crashlytics"]
 - !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So11UIResponderC", "Crashlytics"]
+- ["So11UIResponderC", "UIButton"]
+- ["So11UIResponderC", "crashTest"]
 - ["So11UIResponderC", "didReceiveMemoryWarning"]
 - ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "Crashlytics"]
 - !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So16UIStateRestoringP", "Crashlytics"]
 - !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - ["So16UIStateRestoringP", ""]
+- !private ["So18UITraitEnvironmentP", "Crashlytics"]
 - !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", ""]
+- !private ["So16UIViewControllerC", "Crashlytics"]
+- ["So16UIViewControllerC", "UIButton"]
+- ["So16UIViewControllerC", "crashTest"]
 - ["So16UIViewControllerC", "didReceiveMemoryWarning"]
 - ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", ""]
-- ["19CoreDataCallViewFRC0D10ControllerC", "deinit"]
-- ["19CoreDataCallViewFRC0D10ControllerC", "didReceiveMemoryWarning"]
-- ["19CoreDataCallViewFRC0D10ControllerC", "init"]
-- ["19CoreDataCallViewFRC0D10ControllerC", "viewDidLoad"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Crashlytics"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "crash"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sharedInstance"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 depends-nominal:
 - "s7CVarArgP"
+- !private "So11CrashlyticsC"
 - "s28CustomDebugStringConvertibleP"
 - "s23CustomStringConvertibleP"
 - "s9EquatableP"
@@ -100,6 +150,7 @@ depends-nominal:
 - "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
+- "19CoreDataCallViewFRC04RootD10ControllerC"
 - "So21UIAppearanceContainerP"
 - "So18UIContentContainerP"
 - "So18UIFocusEnvironmentP"
@@ -109,7 +160,6 @@ depends-nominal:
 - "So16UIStateRestoringP"
 - "So18UITraitEnvironmentP"
 - "So16UIViewControllerC"
-- "19CoreDataCallViewFRC0D10ControllerC"
 - "10Foundation27_KeyValueCodingAndObservingP"
 depends-dynamic-lookup:
 depends-external:
@@ -133,10 +183,12 @@ depends-external:
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectSchema.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Pods/Fabric/iOS/Fabric.framework/Headers/Fabric.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm+Sync.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealmConfiguration+Sync.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/NSError+RLMSync.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMThreadSafeReference.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Pods/Crashlytics/iOS/Crashlytics.framework/Headers/CLSStackFrame.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMOptionalBase.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectBase.h"
@@ -153,6 +205,7 @@ depends-external:
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Pods/Crashlytics/iOS/Crashlytics.framework/Headers/CLSLogging.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncUtil.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/Realm.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm.h"
@@ -166,13 +219,21 @@ depends-external:
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncManager.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncUser.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Pods/Crashlytics/iOS/Crashlytics.framework/Headers/Crashlytics.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Pods/Fabric/iOS/Fabric.framework/Headers/FABAttributes.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Pods/Crashlytics/iOS/Crashlytics.framework/Headers/CLSAttributes.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncCredentials.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Pods/Crashlytics/iOS/Crashlytics.framework/Headers/Answers.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMResults.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMConstants.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObject.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Pods/Crashlytics/iOS/Crashlytics.framework/Headers/CLSReport.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Pods/Crashlytics/iOS/Crashlytics.framework/Headers/ANSCompatibility.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Pods/Fabric/iOS/Fabric.framework/Modules/module.modulemap"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Modules/module.modulemap"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Pods/Crashlytics/iOS/Crashlytics.framework/Modules/module.modulemap"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Modules/module.modulemap"
-interface-hash: "2273e0b6560749631899e82af2412a52"
+interface-hash: "39df6b6fdea4f2f829d34f030a155ded"

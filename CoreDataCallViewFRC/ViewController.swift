@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Crashlytics
 
-class ViewController: UIViewController {
+class RootViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func crashTest(_ sender: UIButton) {
+            Crashlytics.sharedInstance().crash()
+    }
+    
 }
 

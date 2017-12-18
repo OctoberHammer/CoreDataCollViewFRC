@@ -292,11 +292,13 @@ SWIFT_CLASS("_TtC19CoreDataCallViewFRC6RmItem")
 - (nonnull instancetype)initWithValue:(id _Nonnull)value schema:(RLMSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
 
-SWIFT_CLASS("_TtC19CoreDataCallViewFRC14ViewController")
-@interface ViewController : UIViewController
+SWIFT_CLASS("_TtC19CoreDataCallViewFRC18RootViewController")
+@interface RootViewController : UIViewController
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (IBAction)crashTest:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

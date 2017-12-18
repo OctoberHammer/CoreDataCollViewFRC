@@ -18,4 +18,6 @@ target 'CoreDataCallViewFRC' do
   pod 'KBRoundedButton'
   pod 'QBFlatButton'
   pod 'PMSuperButton'
+  pod 'Fabric'
+  pod 'Crashlytics'
 end

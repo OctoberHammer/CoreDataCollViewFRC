@@ -15,9 +15,12 @@ provides-dynamic-lookup:
 - "window"
 depends-top-level:
 - "AppDelegate"
+- !private "Array"
 - "Bool"
 - !private "BooleanLiteralType"
 - "CastingPrecedence"
+- !private "Crashlytics"
+- !private "Fabric"
 - !private "NSError"
 - "NSPersistentContainer"
 - "StringLiteralType"
@@ -29,6 +32,8 @@ depends-top-level:
 - !private "fatalError"
 depends-member:
 - ["19CoreDataCallViewFRC11AppDelegateC", "Bool"]
+- !private ["19CoreDataCallViewFRC11AppDelegateC", "Crashlytics"]
+- !private ["19CoreDataCallViewFRC11AppDelegateC", "Fabric"]
 - !private ["19CoreDataCallViewFRC11AppDelegateC", "NSError"]
 - ["19CoreDataCallViewFRC11AppDelegateC", "NSPersistentContainer"]
 - ["19CoreDataCallViewFRC11AppDelegateC", "UIApplication"]
@@ -55,6 +60,8 @@ depends-member:
 - ["19CoreDataCallViewFRC11AppDelegateC", "window"]
 - !private ["s23BidirectionalCollectionP", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "Crashlytics"]
+- !private ["s7CVarArgP", "Fabric"]
 - !private ["s7CVarArgP", "NSPersistentContainer"]
 - ["s7CVarArgP", "application"]
 - ["s7CVarArgP", "applicationDidBecomeActive"]
@@ -78,9 +85,12 @@ depends-member:
 - !private ["s7CVarArgP", "userInfo"]
 - !private ["s7CVarArgP", "viewContext"]
 - ["s7CVarArgP", "window"]
+- !private ["s7CVarArgP", "with"]
 - ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "init"]
 - !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Crashlytics"]
+- !private ["s28CustomDebugStringConvertibleP", "Fabric"]
 - !private ["s28CustomDebugStringConvertibleP", "NSPersistentContainer"]
 - ["s28CustomDebugStringConvertibleP", "application"]
 - ["s28CustomDebugStringConvertibleP", "applicationDidBecomeActive"]
@@ -104,11 +114,14 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "userInfo"]
 - !private ["s28CustomDebugStringConvertibleP", "viewContext"]
 - ["s28CustomDebugStringConvertibleP", "window"]
+- !private ["s28CustomDebugStringConvertibleP", "with"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "Crashlytics"]
+- !private ["s23CustomStringConvertibleP", "Fabric"]
 - !private ["s23CustomStringConvertibleP", "NSPersistentContainer"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s23CustomStringConvertibleP", "application"]
@@ -133,11 +146,14 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "userInfo"]
 - !private ["s23CustomStringConvertibleP", "viewContext"]
 - ["s23CustomStringConvertibleP", "window"]
+- !private ["s23CustomStringConvertibleP", "with"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "init"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "Crashlytics"]
+- !private ["s9EquatableP", "Fabric"]
 - !private ["s9EquatableP", "NSPersistentContainer"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - ["s9EquatableP", "application"]
@@ -162,12 +178,16 @@ depends-member:
 - !private ["s9EquatableP", "userInfo"]
 - !private ["s9EquatableP", "viewContext"]
 - ["s9EquatableP", "window"]
+- !private ["s9EquatableP", "with"]
 - ["s9EquatableP", ""]
 - !private ["s5ErrorP", "userInfo"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["So6FabricC", "with"]
+- !private ["s8HashableP", "Crashlytics"]
+- !private ["s8HashableP", "Fabric"]
 - !private ["s8HashableP", "NSPersistentContainer"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - ["s8HashableP", "application"]
@@ -192,6 +212,7 @@ depends-member:
 - !private ["s8HashableP", "userInfo"]
 - !private ["s8HashableP", "viewContext"]
 - ["s8HashableP", "window"]
+- !private ["s8HashableP", "with"]
 - ["s8HashableP", ""]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
@@ -211,6 +232,8 @@ depends-member:
 - !private ["So22NSManagedObjectContextC", "save"]
 - !private ["So16NSMutableCopyingP", "init"]
 - ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "Crashlytics"]
+- !private ["So8NSObjectC", "Fabric"]
 - !private ["So8NSObjectC", "NSError"]
 - ["So8NSObjectC", "NSPersistentContainer"]
 - ["So8NSObjectC", "UIApplication"]
@@ -239,6 +262,9 @@ depends-member:
 - !private ["So8NSObjectC", "userInfo"]
 - !private ["So8NSObjectC", "viewContext"]
 - ["So8NSObjectC", "window"]
+- !private ["So8NSObjectC", "with"]
+- !private ["So16NSObjectProtocolP", "Crashlytics"]
+- !private ["So16NSObjectProtocolP", "Fabric"]
 - !private ["So16NSObjectProtocolP", "NSPersistentContainer"]
 - ["So16NSObjectProtocolP", "application"]
 - ["So16NSObjectProtocolP", "applicationDidBecomeActive"]
@@ -262,6 +288,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "userInfo"]
 - !private ["So16NSObjectProtocolP", "viewContext"]
 - ["So16NSObjectProtocolP", "window"]
+- !private ["So16NSObjectProtocolP", "with"]
 - ["So16NSObjectProtocolP", ""]
 - !private ["So21NSPersistentContainerC", "init"]
 - !private ["So21NSPersistentContainerC", "loadPersistentStores"]
@@ -279,6 +306,8 @@ depends-member:
 - !private ["s14StringProtocolP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
+- !private ["So21UIApplicationDelegateP", "Crashlytics"]
+- !private ["So21UIApplicationDelegateP", "Fabric"]
 - !private ["So21UIApplicationDelegateP", "NSPersistentContainer"]
 - ["So21UIApplicationDelegateP", "application"]
 - ["So21UIApplicationDelegateP", "applicationDidBecomeActive"]
@@ -297,6 +326,8 @@ depends-member:
 - !private ["So21UIApplicationDelegateP", "saveContext"]
 - ["So21UIApplicationDelegateP", "window"]
 - ["So21UIApplicationDelegateP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "Crashlytics"]
+- !private ["So30UIPasteConfigurationSupportingP", "Fabric"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSPersistentContainer"]
 - ["So30UIPasteConfigurationSupportingP", "application"]
 - ["So30UIPasteConfigurationSupportingP", "applicationDidBecomeActive"]
@@ -317,6 +348,8 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - ["So11UIResponderC", "Bool"]
+- !private ["So11UIResponderC", "Crashlytics"]
+- !private ["So11UIResponderC", "Fabric"]
 - !private ["So11UIResponderC", "NSError"]
 - ["So11UIResponderC", "NSPersistentContainer"]
 - ["So11UIResponderC", "UIApplication"]
@@ -341,6 +374,8 @@ depends-member:
 - ["So11UIResponderC", "saveContext"]
 - ["So11UIResponderC", "window"]
 - ["So11UIResponderC", ""]
+- !private ["So30UIResponderStandardEditActionsP", "Crashlytics"]
+- !private ["So30UIResponderStandardEditActionsP", "Fabric"]
 - !private ["So30UIResponderStandardEditActionsP", "NSPersistentContainer"]
 - ["So30UIResponderStandardEditActionsP", "application"]
 - ["So30UIResponderStandardEditActionsP", "applicationDidBecomeActive"]
@@ -370,6 +405,8 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s10_IndexableP", "init"]
 - !private ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Crashlytics"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Fabric"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSPersistentContainer"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "application"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidBecomeActive"]
@@ -393,6 +430,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userInfo"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewContext"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "with"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
@@ -417,6 +455,7 @@ depends-nominal:
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "So6FabricC"
 - "s8HashableP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
@@ -482,10 +521,12 @@ depends-external:
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectSchema.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Pods/Fabric/iOS/Fabric.framework/Headers/Fabric.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm+Sync.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealmConfiguration+Sync.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/NSError+RLMSync.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMThreadSafeReference.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Pods/Crashlytics/iOS/Crashlytics.framework/Headers/CLSStackFrame.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMOptionalBase.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectBase.h"
@@ -502,6 +543,7 @@ depends-external:
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Pods/Crashlytics/iOS/Crashlytics.framework/Headers/CLSLogging.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncUtil.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/Realm.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm.h"
@@ -515,13 +557,21 @@ depends-external:
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncManager.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncUser.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Pods/Crashlytics/iOS/Crashlytics.framework/Headers/Crashlytics.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Pods/Fabric/iOS/Fabric.framework/Headers/FABAttributes.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Pods/Crashlytics/iOS/Crashlytics.framework/Headers/CLSAttributes.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncCredentials.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Pods/Crashlytics/iOS/Crashlytics.framework/Headers/Answers.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMResults.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMConstants.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObject.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Pods/Crashlytics/iOS/Crashlytics.framework/Headers/CLSReport.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Pods/Crashlytics/iOS/Crashlytics.framework/Headers/ANSCompatibility.h"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Pods/Fabric/iOS/Fabric.framework/Modules/module.modulemap"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Modules/module.modulemap"
+- "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Pods/Crashlytics/iOS/Crashlytics.framework/Modules/module.modulemap"
 - "/Users/octoberhammer/Developer/CoreDataCallViewFRC/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Modules/module.modulemap"
-interface-hash: "38054c1866cf7af7a50aa20a615dba16"
+interface-hash: "cbd3f8fc6d767aa45bd17135677c4341"
